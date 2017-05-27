@@ -1,7 +1,7 @@
 ﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Брыль](https://up.htmlacademy.ru/adaptive/11/user/180349).
-* Наставник: [Лена Карякина]
+* Наставник: [Лена Карякина](https://htmlacademy.ru/profile/cubizm).
 
 **Обратите внимание на файлы:**
 
