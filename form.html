@@ -7,117 +7,117 @@
   <body>
     <header class="page-header">
       <h1 class="page-header__title">Приложение Pink</h1><!--скрыт-->
-      <section class="logo page-header__logo">
-        <img src="http://placeholder.it" width="" height="" alt="Логотип Pink">
-      </section>
-      <nav class="page-header__nav main-nav main-nav--open">
-        <span class="main-nav__toogler main-nav__toogler--open"></span>
+      <div class="logo">
+        <img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink">
+      </div>
+      <nav class="main-nav">
+        <span class="main-nav__toogler"></span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a>Конкурс</a>
+              <a class="main-nav__link">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="promo promo--inner">
-      <h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      <p class="promo__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-    </section>
-    <section class="competition">
-      <form class="competition__form" action="https://echo.htmlacademy.ru/"method="post">
-        <div class="competition__form-inner">
-          <label class="field-text competition__form-field">Фамилия:
-            <input class="field-text__input" type="text" placeholder="Укажите фамилию *" name="name">
+    <main class="main-content">
+      <section class="promo promo--inner">
+        <h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="invoke">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      </section>
+      <form class="competition" action="https://echo.htmlacademy.ru/"method="post">
+        <div class="competition__form">
+          <label class="field-text">Фамилия:
+            <input class="field-input" type="text" placeholder="Укажите фамилию *" name="name">
           </label>
-          <label class="field-text competition__form-field">Имя:
-            <input class="field-text__input" type="text" placeholder="Введите ваше имя *" name="name">
+          <label class="field-text">Имя:
+            <input class="field-input" type="text" placeholder="Введите ваше имя *" name="name">
           </label>
-          <label class="field-text competition__form-field">Отчество:
-            <input class="field-text__input" type="text" placeholder="Ну и отчество тоже" name="name">
+          <label class="field-text">Отчество:
+            <input class="field-input" type="text" placeholder="Ну и отчество тоже" name="name">
           </label>
         </div>
-        <div class="competition__form-inner competition__form-inner--invert">
+        <div class="competition__form--invert">
           <h3 class="competition__form-title">Ваши безбашенные достижения в путешествии</h3>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-checkbox" type="checkbox" checked>Сделал селфи с акулой
+          <label class="field-text--invert">
+            <input class="field-input--checkbox" type="checkbox" checked>Сделал селфи с акулой
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-checkbox" type="checkbox" checked>Обгорел на пляже
+          <label class="field-text--invert">
+            <input class="field-input--checkbox" type="checkbox" checked>Обгорел на пляже
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-checkbox" type="checkbox">Видел Чака Норриса
+          <label class="field-text--invert">
+            <input class="field-input--checkbox" type="checkbox">Видел Чака Норриса
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-checkbox" type="checkbox">Накупил сувениров
+          <label class="field-text--invert">
+            <input class="field-input--checkbox" type="checkbox">Накупил сувениров
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-checkbox" type="checkbox" checked>Удержал башню
+          <label class="field-text--invert">
+            <input class="field-input--checkbox" type="checkbox" checked>Удержал башню
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-checkbox" type="checkbox">Разгромил отель
-          </label>
-        </div>
-        <div class="competition__form-inner">
-          <label class="field-text competition__form-field">Номер телефона:
-            <input class="field-text__input" type="text" placeholder="Номер, пожалуйста" name="tel">
-          </label>
-          <label class="field-text competition__form-field">Адрес почты:
-            <input class="field-text__input" type="text" placeholder="Введите почту *" name="email">
+          <label class="field-text--invert">
+            <input class="field-input--checkbox" type="checkbox">Разгромил отель
           </label>
         </div>
-        <div class="competition__form-inner competition__form-inner--invert">
+        <div class="competition__form">
+          <label class="field-text">Номер телефона:
+            <input class="field-input" type="text" placeholder="Номер, пожалуйста" name="tel">
+          </label>
+          <label class="field-text">Адрес почты:
+            <input class="field-input" type="text" placeholder="Введите почту *" name="email">
+          </label>
+        </div>
+        <div class="competition__form--invert">
           <h3 class="competition__form-title">С каким приложением путешествовали?</h3>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-radio" type="radio" name="pink" checked>Pink для iOS
+          <label class="field-text--invert">
+            <input class="field-input--radio" type="radio" name="pink" checked>Pink для iOS
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-radio" type="radio" name="pink">Pink на Android
+          <label class="field-text--invert">
+            <input class="field-input--radio" type="radio" name="pink">Pink на Android
           </label>
-          <label class="field-text field-text--invert competition__form-field">
-            <input class="field-text__input-radio" type="radio" name="pink">Windows Phone
+          <label class="field-text--invert ">
+            <input class="field-input--radio" type="radio" name="pink">Windows Phone
           </label>
         </div>
-        <div class="competition__form-inner">
-          <label class="field-text competition__form-field">Опишите свои эмоции:
-            <textarea class="field-text__input" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="textarea"></textarea>
+        <div class="competition__form">
+          <label class="field-text">Опишите свои эмоции:
+            <textarea class="field-textarea" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="textarea"></textarea>
           </label>
         </div>
         <button class="competition__btn btn">Отправить форму</button>
         <p class="competition__addition">* - обязательные поля</p>
       </form>
-    </section>
+    </main>
     <footer class="page-footer">
-      <section class="logo page-footer__logo">
-        <img src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink">
-      </section>
-      <section class="page-footer__social">
-        <ul class="page-footer__social-links social-links">
-          <li class="social-links__item">
-            <a class="social-links__item-link social-links__item-link--twitter" href="" title="Twitter">Twitter</a>
+      <div class="logo">
+        <img  class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink">
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="" title="Twitter">Twitter</a>
           </li>
-          <li class="social-links__item">
-            <a class="social-links__item-link social-links__item-link--facebook" href="" title="Facebook">Facebook</a>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="" title="Facebook">Facebook</a>
           </li>
-          <li class="social-links__item">
-            <a class="social-links__item-link social-links__item-link--play" href="" title="Play">Play</a>
+          <li class="social__item">
+            <a class="social__link social__link--play" href="" title="Play">Play</a>
           </li>
         </ul>
-      </section>
-      <section class="page-footer__copyright">
+      </div>
+      <div class="copyright">
         <p>Разработано</p>
-        <a href=""><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
-      </section>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+      </div>
     </footer>
   </body>
 </html>

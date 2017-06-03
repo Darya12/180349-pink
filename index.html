@@ -7,145 +7,179 @@
   <body>
     <header class="page-header">
       <h1 class="page-header__title">Приложение Pink</h1><!--скрыт-->
-      <section class="logo page-header__logo">
-        <img src="http://placeholder.it" width="" height="" alt="Логотип Pink">
-      </section>
-      <nav class="page-header__nav main-nav main-nav--open">
-        <span class="main-nav__toogler main-nav__toogler--open"></span>
+      <div class="logo">
+        <img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink">
+      </div>
+      <nav class="main-nav">
+        <span class="main-nav__toogler"></span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="promo">
-      <h2 class="promo__title">Взгляните на жизнь иначе!</h2><!--скрыт-->
-      <div class="promo__descr">
-        <a class="promo__link btn" href="">Скачать приложение</a>
-        <ul class="promo__list">
-          <li class="promo__icon">
-            <a  class="promo__icon-item promo__icon-item--apple" href="" title="Apple">Apple</a>
+    <main class="main-content">
+      <section class="promo">
+        <h2 class="promo__title">Взгляните на жизнь иначе!</h2><!--скрыт-->
+        <a class="promo__link-market btn" href="">Скачать приложение</a>
+        <ul class="link-market">
+          <li class="link-market__icon">
+            <a class="link-market__item link-market__item--apple" href="" title="Apple">Apple</a>
           </li>
-          <li class="promo__icon">
-            <a class="promo__icon-item promo__icon-item--android" href="" title="Android">Android</a>
+          <li class="link-market__icon">
+            <a class="link-market__item link-market__item--android" href="" title="Android">Android</a>
           </li>
-          <li class="promo__icon">
-            <a class="promo__icon-item promo__icon-item--windows" href="" title="Windows">Windows</a>
+          <li class="link-market__icon">
+            <a class="link-market__item link-market__item--windows" href="" title="Windows">Windows</a>
           </li>
         </ul>
         <p class="promo__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        <p class="promo__text--big">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-      </div>
-    </section>
-    <section class="offer">
-      <article class="offer__wrapper">
+        <p class="promo-text promo__text--big">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+      </section>
+      <section class="offer">
         <div class="offer__item">
-          <h3 class="offer__item-title">Поднимает настроение</h3>
-          <p class="offer__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!></p>
+          <h3 class="offer__title">Поднимает настроение</h3>
+          <p class="offer__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <img class="offer__image" src="http://placeholder.it" width="" height="" alt="Фото">
         </div>
         <div class="offer__item">
-          <h3 class="offer__item-title">Меняет мир вокруг</h3>
-          <p class="offer__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект></p>
+          <h3 class="offer__title">Меняет мир вокруг</h3>
+          <p class="offer__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <img class="offer__image" src="http://placeholder.it" width="" height="" alt="Фото">
         </div>
         <div class="offer__item">
-          <h3 class="offer__item-title">Заводит новых друзей</h3>
-          <p class="offer__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых></p>
-          <img src="http://placeholder.it" width="" height="" alt="Фото">
+          <h3 class="offer__title">Заводит новых друзей</h3>
+          <p class="offer__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <img class="offer__image" src="http://placeholder.it" width="" height="" alt="Фото">
         </div>
-      </article>
-      <article class="offer__review">
-        <div class="offer__review-wrapper slider">
-          <div class="offer__review-list slider-wrapper">
-            <div class="offer__review-item slider-inner">
-              <blockquote class="offer__review-item-person slider-item">
-                <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-                <cite class="offer__review-author">Николай Петров</cite>
-                <cite class="offer__review-profession">водитель трамвая, 25 лет</cite>
-              </blockquote>
-            </div>
-            <div class="offer__review-item slider-inner">
-              <blockquote class="offer__review-item-person slider-item">
-                <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-                <cite class="offer__review-author">Николай Петров</cite>
-                <cite class="offer__review-profession">водитель трамвая, 25 лет</cite>
-              </blockquote>
-            </div>
-            <div class="offer__review-item slider-inner">
-              <blockquote class="offer__review-item-person slider-item">
-                <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-                <cite class="offer__review-author">Николай Петров</cite>
-                <cite class="offer__review-profession">водитель трамвая, 25 лет</cite>
-              </blockquote>
-            </div>
+        <div class="offer__item--wide">
+          <h3 class="offer__title">Эффект на 24 часа!</h3>
+          <p class="offer__descr">Британские ученые провели исследования и доказали, что положительные эффект от использования приложения длится целые сутки!</p>
+          <a class="offer__study" href="">Узнать больше об исследовании</a>
+          <img class="offer__image" src="http://placeholder.it" width="" height="" alt="Фото">
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper slider">
+          <div class="review__item slider__inner">
+            <blockquote class="review__person slider__item">
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <div class="review-cite">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__profession">водитель трамвая, 25 лет</p>
+              </div>
+            </blockquote>
           </div>
-          <span class="offer__review-toogler"></span>
+          <div class="review__item slider__inner">
+            <blockquote class="review__person slider__item">
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <div class="review-cite">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__profession">водитель трамвая, 25 лет</p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="review__item slider__inner">
+            <blockquote class="review__person slider__item">
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <div class="review-cite">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__profession">водитель трамвая, 25 лет</p>
+              </div>
+            </blockquote>
+          </div>
         </div>
-      </article>
-    </section>
-    <section class="services">
-      <table class="services__view">
-        <tr>
-          <td class="services__name">База 1,99 USD
-          </td>
-          <td class="services__name">Стандарт 3,99 USD
-          </td>
-          <td class="services__name">Анлим 9,99 USD
-          </td>
-        </tr>
-        <tr>
-          <td class="services__item">Розовый фильтр
-          </td>
-          <td class="services__item"><span class="services__yes"></span>
-          </td>
-          <td class="services__item"><span class="services__yes"></span>
-          </td>
-          <td class="services__item"><span class="services__yes"></span>
-          </td>
-        </tr>
-        <tr>
-          <td class="services__item">Смайлики
-          </td>
-          <td class="services__item"><span class="services__no"></span>
-          </td>
-          <td class="services__item"><span class="services__yes"></span>
-          </td>
-          <td class="services__item"><span class="services__yes"></span>
-          </td>
-        </tr>
-        <tr>
-          <td class="services__item">Комментарии
-          </td>
-          <td class="services__item"><span class="services__no"></span>
-          </td>
-          <td class="services__item"><span class="services__no"></span>
-          </td>
-          <td class="services__item"><span class="services__yes"></span>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <section class="contacts">
-      <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="contacts_descr">
-        <p class="contacts__item">Звоните:<a class="contacts__link" href="tel:+7(812)555-66-66"></a>+7(812)555-66-66</p>
-        <p class="contacts__item">Пишите:<a class="contacts__link" href="">mail@htmlacademy.ru</a></p>
-        <p class="contacts__item">Приезжайте в гости:<span class="contacts__link">ул. Большая Конюшенная, 19/8</span></p>
+        <span class="review__toogler"></span>
+      </section>
+      <section class="rate">
+        <table class="rate__view">
+          <tr class="rate__line">
+            <td class="rate__name">База 1,99 USD
+            </td>
+            <td class="rate__name">Стандарт 3,99 USD
+            </td>
+            <td class="rate__name">Анлим 9,99 USD
+            </td>
+          </tr>
+          <tr class="rate__line">
+            <td class="rate__item">Розовый фильтр
+            </td>
+            <td class="rate__item"><span class="rate__available">да</span>
+            </td>
+            <td class="rate__item"><span class="rate__available">да</span>
+            </td>
+            <td class="rate__item"><span class="rate__available">да</span>
+            </td>
+          </tr>
+          <tr class="rate__line">
+            <td class="rate__item">Смайлики
+            </td>
+            <td class="rate__item"><span class="rate__not-available">нет</span>
+            </td>
+            <td class="rate__item"><span class="rate__available">да</span>
+            </td>
+            <td class="rate__item"><span class="rate__available">да</span>
+            </td>
+          </tr>
+          <tr class="rate__line">
+            <td class="rate__item">Комментарии
+            </td>
+            <td class="rate__item"><span class="rate__not-available">нет</span>
+            </td>
+            <td class="rate__item"><span class="rate__not-available">нет</span>
+            </td>
+            <td class="rate__item"><span class="rate__available">да</span>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts_descr">
+          <p class="contacts__item">Звоните:</p>
+            <a class="contacts__link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+          <p class="contacts__item">Пишите:</p>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="contacts__item">Приезжайте в гости: ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </section>
+      <div class="map">
+        <img  class="map__image" src="http://placeholder.it" width="" height="" alt="Карта">
       </div>
-      <div class="contacts__map">
+    </main>
+    <footer class="page-footer">
+      <div class="logo">
+        <img  class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink">
       </div>
-    </section>
-
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="" title="Twitter">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="" title="Facebook">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--play" href="" title="Play">Play</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+      </div>
+    </footer>
   </body>
 </html>
