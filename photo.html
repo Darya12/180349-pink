@@ -8,7 +8,7 @@
     <header class="page-header">
       <h1 class="page-header__title">Приложение Pink</h1><!--скрыт-->
       <div class="logo">
-        <a class="logo__link" href="index.html"><img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink"></a>
+        <a class="logo__link" href="index.html"><img class="logo__image" src="http://placeholder.it" alt="Логотип Pink" title="Логотип Pink"></a>
       </div>
       <nav class="main-nav">
         <span class="main-nav__toogler">toogle</span>
@@ -37,75 +37,82 @@
       </section>
       <section class="photo">
         <article class="photo__item photo__item--look">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Анна (5 минут назад)</p>
             <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="like">Нравится: 215</p>
+            <p class="photo__like">Нравится: 215</p>
           </div>
         </article>
         <article class="photo__item">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Левон (5 часов назад)</p>
             <p class="photo__comment">Вчера он на луну летал, сегодня в гости к нам попал.</p>
-            <p class="like">Нравится: 356</p>
+            <p class="photo__like">Нравится: 356</p>
           </div>
         </article>
         <article class="photo__item">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Антон (12 часов назад)</p>
             <p class="photo__comment">Соседи будут рады!</p>
-            <p class="like">Нравится: 666</p>
+            <p class="photo__like">Нравится: 666</p>
           </div>
         </article>
         <article class="photo__item">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Борис (20 часов назад)</p>
             <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="like">Нравится: 215</p>
+            <p class="photo__like">Нравится: 215</p>
           </div>
         </article>
         <article class="photo__item">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Сергей (25 часов назад)</p>
             <p class="photo__comment">Самая кубанская в мире!</p>
-            <p class="like">Нравится: 4</p>
+            <p class="photo__like">Нравится: 4</p>
           </div>
         </article>
         <article class="photo__item">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Максим (40 часов назад)</p>
             <p class="photo__comment">Где снег-то?</p>
-            <p class="like">Нравится: 150</p>
+            <p class="photo__like">Нравится: 150</p>
           </div>
         </article>
         <article class="photo__item">
-          <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
+          <img class="photo__picture" src="http://placeholder.it" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Надежда (45 часов назад)</p>
             <p class="photo__comment">Всем GM и взаимные лайки!</p>
-            <p class="like">Нравится: 2560</p>
+            <p class="photo__like">Нравится: 2560</p>
           </div>
         </article>
       </section>
-      <section class="your-photo">
-        <p class="your_photo__invoke">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <section class="user-photo">
+        <p class="user-photo__invoke">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload" action="https://echo.htmlacademy.ru/" method="post">
-          <img src="http://placeholder.it" width="" height="" alt="Фото">
-          <label class="upload-image">Обрезка
-            <input class="upload-range" type="range">
-          </label>
-          <label class="upload-image">Обрезка
-            <input class="upload-range" type="range">
-          </label>
-          <label class="upload-image">Свет
-            <input class="upload-range" type="range">
-          </label>
+          <img src="http://placeholder.it" alt="Фото">
+          <div class="upload__block">
+            <label class="upload__label" for id="size">Обрезка</label>
+            <input class="upload__input" id="size" type="radio" name="parameter" checked>
+          </div>
+          <div class="upload__block">
+            <label class="upload__label" for id="fill">Заливка</label>
+            <input class="upload__input" id="fill" type="radio" name="parameter">
+          </div>
+          <div class="upload__block">
+            <label class="upload__label" for id="contrast">Контраст</label>
+            <input class="upload__input" id="contrast" type="radio" name="parameter">
+          </div>
+          <div class="upload__scale">
+            <div class="upload__bar">
+            </div>
+          </div>
           <button class="btn" type="submit">Запостить</button>
           <button class="btn--invert" type="button">Отмена</button>
         </form>
@@ -113,7 +120,7 @@
     </main>
     <footer class="page-footer">
       <div class="logo">
-        <img  class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink">
+        <img  class="logo__image" src="http://placeholder.it" alt="Логотип Pink" title="Логотип Pink">
       </div>
       <div class="social">
         <ul class="social__list">
@@ -130,7 +137,7 @@
       </div>
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
       </div>
     </footer>
   </body>
