@@ -8,10 +8,10 @@
     <header class="page-header">
       <h1 class="page-header__title">Приложение Pink</h1><!--скрыт-->
       <div class="logo">
-        <a href="index.html"><img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink"></a>
+        <a class="logo__link" href="index.html"><img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink"></a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toogler"></span>
+        <span class="main-nav__toogler">toogle</span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -33,10 +33,10 @@
     <main class="main-content">
       <section class="promo promo--inner">
         <h2 class="promo__title">Фотографии пользователей</h2>
-        <p class="invoke">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
       <section class="photo">
-        <article class="photo__item">
+        <article class="photo__item photo__item--look">
           <img class="photo__picture" src="http://placeholder.it" width="" height="" alt="Фото путешествия">
           <div class="photo__descr">
             <p class="photo__author">Анна (5 минут назад)</p>
@@ -94,7 +94,7 @@
         </article>
       </section>
       <section class="your-photo">
-        <p class="invoke">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="your_photo__invoke">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload" action="https://echo.htmlacademy.ru/" method="post">
           <img src="http://placeholder.it" width="" height="" alt="Фото">
           <label class="upload-image">Обрезка
@@ -107,7 +107,7 @@
             <input class="upload-range" type="range">
           </label>
           <button class="btn" type="submit">Запостить</button>
-          <button class="btn--invert" type="submit">Отмена</button>
+          <button class="btn--invert" type="button">Отмена</button>
         </form>
       </section>
     </main>
@@ -129,8 +129,8 @@
         </ul>
       </div>
       <div class="copyright">
-        <p>Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
       </div>
     </footer>
   </body>

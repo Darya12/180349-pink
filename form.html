@@ -8,10 +8,10 @@
     <header class="page-header">
       <h1 class="page-header__title">Приложение Pink</h1><!--скрыт-->
       <div class="logo">
-        <a href="index.html"><img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink"></a>
+        <a class="logo__link" href="index.html"><img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink" title="Логотип Pink"></a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toogler"></span>
+        <span class="main-nav__toogler">toogle</span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -33,7 +33,7 @@
     <main class="main-content">
       <section class="promo promo--inner">
         <h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="invoke">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <p class="promo__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       </section>
       <form class="competition" action="https://echo.htmlacademy.ru/" method="post">
         <div class="competition__form">
@@ -47,25 +47,25 @@
             <input class="field-input" type="text" placeholder="Ну и отчество тоже" name="name">
           </label>
         </div>
-        <div class="competition__form--invert">
+        <div class="competition__form competition__form--invert">
           <h3 class="competition__form-title">Ваши безбашенные достижения в путешествии</h3>
-          <label class="field-text--invert">
-            <input class="field-input--checkbox" type="checkbox" checked>Сделал селфи с акулой
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--checkbox" type="checkbox" checked>Сделал селфи с акулой
           </label>
-          <label class="field-text--invert">
-            <input class="field-input--checkbox" type="checkbox" checked>Обгорел на пляже
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--checkbox" type="checkbox" checked>Обгорел на пляже
           </label>
-          <label class="field-text--invert">
-            <input class="field-input--checkbox" type="checkbox">Видел Чака Норриса
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--checkbox" type="checkbox">Видел Чака Норриса
           </label>
-          <label class="field-text--invert">
-            <input class="field-input--checkbox" type="checkbox">Накупил сувениров
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--checkbox" type="checkbox">Накупил сувениров
           </label>
-          <label class="field-text--invert">
-            <input class="field-input--checkbox" type="checkbox" checked>Удержал башню
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--checkbox" type="checkbox" checked>Удержал башню
           </label>
-          <label class="field-text--invert">
-            <input class="field-input--checkbox" type="checkbox">Разгромил отель
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--checkbox" type="checkbox">Разгромил отель
           </label>
         </div>
         <div class="competition__form">
@@ -76,21 +76,21 @@
             <input class="field-input" type="text" placeholder="Введите почту *" name="email">
           </label>
         </div>
-        <div class="competition__form--invert">
+        <div class="competition__form competition__form--invert">
           <h3 class="competition__form-title">С каким приложением путешествовали?</h3>
-          <label class="field-text--invert">
-            <input class="field-input--radio" type="radio" name="pink" checked>Pink для iOS
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--radio" type="radio" name="pink" checked>Pink для iOS
           </label>
-          <label class="field-text--invert">
-            <input class="field-input--radio" type="radio" name="pink">Pink на Android
+          <label class="field-text field-text--invert">
+            <input class="field-input field-input--radio" type="radio" name="pink">Pink на Android
           </label>
-          <label class="field-text--invert ">
-            <input class="field-input--radio" type="radio" name="pink">Windows Phone
+          <label class="field-text field-text--invert ">
+            <input class="field-input field-input--radio" type="radio" name="pink">Windows Phone
           </label>
         </div>
         <div class="competition__form">
           <label class="field-text">Опишите свои эмоции:
-            <textarea class="field-textarea" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="textarea"></textarea>
+            <textarea class="field-input field-input--textarea" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="textarea"></textarea>
           </label>
         </div>
         <button class="competition__btn btn">Отправить форму</button>
@@ -115,8 +115,8 @@
         </ul>
       </div>
       <div class="copyright">
-        <p>Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
       </div>
     </footer>
   </body>

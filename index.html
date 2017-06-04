@@ -11,7 +11,7 @@
         <img class="logo__image" src="http://placeholder.it" width="" height="" alt="Логотип Pink">
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toogler"></span>
+        <span class="main-nav__toogler">toogle</span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -34,17 +34,11 @@
       <section class="promo">
         <h2 class="promo__title">Взгляните на жизнь иначе!</h2><!--скрыт-->
         <a class="promo__link-market btn" href="">Скачать приложение</a>
-        <ul class="link-market">
-          <li class="link-market__icon">
-            <a class="link-market__item link-market__item--apple" href="" title="Apple">Apple</a>
-          </li>
-          <li class="link-market__icon">
-            <a class="link-market__item link-market__item--android" href="" title="Android">Android</a>
-          </li>
-          <li class="link-market__icon">
-            <a class="link-market__item link-market__item--windows" href="" title="Windows">Windows</a>
-          </li>
-        </ul>
+        <div class="link-market">
+          <a class="link-market__item link-market__item--apple" href="" title="Apple">Apple</a>
+          <a class="link-market__item link-market__item--android" href="" title="Android">Android</a>
+          <a class="link-market__item link-market__item--windows" href="" title="Windows">Windows</a>
+        </div>
         <p class="promo__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         <p class="promo-text promo__text--big">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
       </section>
@@ -76,75 +70,73 @@
           <div class="review__item slider__inner">
             <blockquote class="review__person slider__item">
               <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-              <div class="review-cite">
+              <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__profession">водитель трамвая, 25 лет</p>
-              </div>
+              </footer>
             </blockquote>
           </div>
           <div class="review__item slider__inner">
             <blockquote class="review__person slider__item">
               <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-              <div class="review-cite">
+              <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__profession">водитель трамвая, 25 лет</p>
-              </div>
+              </footer>
             </blockquote>
           </div>
           <div class="review__item slider__inner">
             <blockquote class="review__person slider__item">
               <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-              <div class="review-cite">
+              <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__profession">водитель трамвая, 25 лет</p>
-              </div>
+              </footer>
             </blockquote>
           </div>
         </div>
         <span class="review__toogler"></span>
       </section>
-      <section class="rate">
-        <table class="rate__view">
-          <tr class="rate__line">
-            <td class="rate__name">База 1,99 USD
-            </td>
-            <td class="rate__name">Стандарт 3,99 USD
-            </td>
-            <td class="rate__name">Анлим 9,99 USD
-            </td>
-          </tr>
-          <tr class="rate__line">
-            <td class="rate__item">Розовый фильтр
-            </td>
-            <td class="rate__item"><span class="rate__available">да</span>
-            </td>
-            <td class="rate__item"><span class="rate__available">да</span>
-            </td>
-            <td class="rate__item"><span class="rate__available">да</span>
-            </td>
-          </tr>
-          <tr class="rate__line">
-            <td class="rate__item">Смайлики
-            </td>
-            <td class="rate__item"><span class="rate__not-available">нет</span>
-            </td>
-            <td class="rate__item"><span class="rate__available">да</span>
-            </td>
-            <td class="rate__item"><span class="rate__available">да</span>
-            </td>
-          </tr>
-          <tr class="rate__line">
-            <td class="rate__item">Комментарии
-            </td>
-            <td class="rate__item"><span class="rate__not-available">нет</span>
-            </td>
-            <td class="rate__item"><span class="rate__not-available">нет</span>
-            </td>
-            <td class="rate__item"><span class="rate__available">да</span>
-            </td>
-          </tr>
-        </table>
-      </section>
+      <table class="rate">
+        <tr class="rate__line">
+          <td class="rate__name">База 1,99 USD
+          </td>
+          <td class="rate__name">Стандарт 3,99 USD
+          </td>
+          <td class="rate__name">Анлим 9,99 USD
+          </td>
+        </tr>
+        <tr class="rate__line">
+          <td class="rate__item">Розовый фильтр
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+        </tr>
+        <tr class="rate__line">
+          <td class="rate__item">Смайлики
+          </td>
+          <td class="rate__item"><span class="rate__not-available">нет</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+        </tr>
+        <tr class="rate__line">
+          <td class="rate__item">Комментарии
+          </td>
+          <td class="rate__item"><span class="rate__not-available">нет</span>
+          </td>
+          <td class="rate__item"><span class="rate__not-available">нет</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+        </tr>
+      </table>
       <section class="contacts">
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts_descr">
@@ -177,8 +169,8 @@
         </ul>
       </div>
       <div class="copyright">
-        <p>Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" width="" height="" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
       </div>
     </footer>
   </body>
