@@ -1,0 +1,33 @@
+@define-mixin container {
+  width: 320px;
+  margin: 0, auto;
+}
+@define-mixin body-text {
+  font-family: $font-regular;
+  font-size: $font-body-size;
+  line-height: 24px;
+  color: $font-body-color;
+}
+@define-mixin body-title-2 {
+  font-family: $font-light;
+  font-size: $font-h2-size;
+  color: $font-h2-color;
+}
+@define-mixin body-title-3 {
+  font-family: $font-regular;
+  font-size: $font-h3-size;
+  color: $font-h3-color;
+  line-height: 18px;
+}
+@define-mixin index-title-3 {
+  font-family:$font-bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+@define-mixin btn-form {
+  font-family: $font-bold;
+  color: $font-form-color;
+  font-size: 18px;
+  line-height: 30px;
+}

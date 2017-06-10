@@ -1,0 +1,4 @@
+.user-photo__invoke {
+  @mixin body-text;
+  background-color: $bg-color;
+}

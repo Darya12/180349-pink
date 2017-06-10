@@ -1,0 +1,21 @@
+.main-nav__list{
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+}
+.main-nav__item {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 32px;
+  cursor: pointer;
+    &:hover>a {
+      color: $link-color-hover;
+    }
+}
+.main-nav__link {
+  color: $link-color;
+  text-decoration: none;
+    &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,29 @@
+.competition__form {
+  background-color: $bg-color;
+    &--invert {
+      background-color: $bg-color-block;
+    }
+}
+.competition__addition {
+  @mixin body-text;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.competition__btn {
+  @mixin btn-form;
+  color: $font-form-color;
+  background-color: $btn-form-color;
+  border: none;
+  border-radius: 3px;
+  padding: 16px 47px;
+  cursor: pointer;
+    &:hover {
+      background-color:$btn-form-hover-color;
+    }
+    &:active {
+      color: color($btn-form-color lightness(70%));
+    }
+    &:disabled {
+      background-color: #e5e5e5;
+    }
+}

@@ -1,0 +1,25 @@
+.photo__picture{
+  background-color: #9ba6a9;
+}
+.photo__descr {
+  background-color: $bg-color-block;
+  margin: 0;
+  padding-left: 18px;
+}
+.photo__author {
+  @mixin body-text;
+  font-family: "Open Sans bold";
+}
+.photo__time{
+  @mixin body-text;
+  font-family: "Open Sans light";
+  text-transform: uppercase;
+}
+.photo__comment {
+  @mixin body-text;
+}
+.photo__like {
+  @mixin body-text;
+  color: #d22856;
+  text-transform: uppercase;
+}

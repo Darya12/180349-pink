@@ -1,0 +1,26 @@
+.upload__btn {
+  border: 3px solid $font-body-invert-color;
+  color: $font-h3-color;
+  background-color: $bg-color;
+  &:hover {
+    background-color:$font-body-invert-color;
+    color: $font-form-color;
+  }
+  &:active {
+    background-color:$font-body-invert-color;
+    color: color($font-body-invert-color lightness(70%));
+  }
+}
+.upload__btn--invert {
+  border: 3px solid color($btn-color-border lightness(90%));
+  color: color($btn-color-border lightness(90%));
+  &:hover {
+    border: 3px solid color($btn-color-border lightness(70%));
+    color: color($btn-color-border lightness(70%));
+    background-color: $bg-color;
+  }
+  &:active {
+    background-color: color($btn-color-border lightness(70%));
+    color: color($btn-color-border lightness(90%));
+  }
+}

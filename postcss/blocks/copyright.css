@@ -1,0 +1,5 @@
+.copyright__text {
+  @mixin body-text;
+  font-size: 14px;
+  line-height: 18px;
+}

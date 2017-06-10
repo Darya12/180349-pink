@@ -1,0 +1,27 @@
+@import "variables.css";
+@import "mixins.css";
+
+@import "global/fonts.css";
+
+@import "blocks/page-header.css";
+@import "blocks/logo.css";
+@import "blocks/main-nav.css";
+@import "blocks/main-content.css";
+@import "blocks/promo.css";
+@import "blocks/link-market.css";
+@import "blocks/offer.css";
+@import "blocks/review.css";
+@import "blocks/slider.css";
+@import "blocks/rate.css";
+@import "blocks/contacts.css";
+@import "blocks/map.css";
+@import "blocks/page-footer.css";
+@import "blocks/social.css";
+@import "blocks/copyright.css";
+@import "blocks/competition.css";
+@import "blocks/field-text.css";
+@import "blocks/field-input.css";
+@import "blocks/btn.css";
+@import "blocks/photo.css";
+@import "blocks/user-photo.css";
+@import "blocks/upload.css";

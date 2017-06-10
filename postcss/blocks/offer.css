@@ -1,0 +1,12 @@
+.offer__item {
+  background-color: $bg-color-block;
+}
+.offer__title {
+  @mixin index-title-3;
+}
+.offer__descr {
+  @mixin body-text;
+}
+.offer__item--wide {
+  display: none;
+}

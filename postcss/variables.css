@@ -1,0 +1,25 @@
+$font-regular: "Open Sans", "Helvetica", san-serif;
+$font-bold: "Open Sans bold", "Helvetica", san-serif;
+$font-light: "Open Sans light", "Helvetica", san-serif;
+
+$font-body-size: 14px;
+$font-h2-size: 24px;
+$font-h3-size: 14px;
+
+$font-body-color: #283645;
+$font-body-invert-color:#d22856;
+$font-h2-color: #ffffff;
+$font-h3-color: #d22856;
+$font-form-color: #ffffff;
+
+
+$bg-color: #ffffff;
+$bg-color-block: #f2f2f2;
+$bg-color-dark-grey: #283645;
+$btn-color-border:#283645;
+$btn-form-color: #2aab6d;
+
+$link-color: #ffffff;
+$link-color-hover: #d22856;
+
+$btn-form-hover-color: #1c9b5e;

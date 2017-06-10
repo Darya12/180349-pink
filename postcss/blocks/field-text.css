@@ -1,0 +1,21 @@
+.competition__form-title {
+  @mixin body-title-3;
+}
+.field-text {
+  @mixin body-text;
+  line-height: 30px;
+    &--invert {
+    color: $font-body-invert-color;
+    text-transform: uppercase;
+  }
+}
+.field-input::-webkit-input-placeholder {
+  @mixin body-text;
+  font-size: 18px;
+  line-height: 30px;
+}
+.field-input:-moz-placeholder {
+  @mixin body-text;
+  font-size: 18px;
+  line-height: 30px;
+}

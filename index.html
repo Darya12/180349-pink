@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Приложение Pink</h1><!--скрыт-->
+      <h1 class="page-header__title-visually-hidden">Приложение Pink</h1>
       <div class="logo">
-        <img class="logo__image" src="http://placeholder.it" alt="Логотип Pink">
+        <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink" title="Логотип Pink">
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toogler">toogle</span>
+        <button class="main-nav__toogler">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -32,7 +33,7 @@
     </header>
     <main class="main-content">
       <section class="promo">
-        <h2 class="promo__title">Взгляните на жизнь иначе!</h2><!--скрыт-->
+        <h2 class="promo__title promo__title--invert">Взгляните на жизнь иначе!</h2><!--скрыт-->
         <a class="promo__link-market btn" href="">Скачать приложение</a>
         <div class="link-market">
           <a class="link-market__item link-market__item--apple" href="" title="Apple">Apple</a>
@@ -40,7 +41,8 @@
           <a class="link-market__item link-market__item--windows" href="" title="Windows">Windows</a>
         </div>
         <p class="promo__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        <p class="promo-text promo__text--big">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <p class="promo__text promo__text--big">Устали от серости мегаполиса?</p>
+        <p class="promo__text promo__text--big">Нам есть, что вам предложить!</p>
       </section>
       <section class="offer">
         <div class="offer__item">
@@ -56,9 +58,9 @@
         <div class="offer__item">
           <h3 class="offer__title">Заводит новых друзей</h3>
           <p class="offer__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          <img class="offer__image" src="http://placeholder.it" width="" height="" alt="Фото">
+          <img class="offer__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото">
         </div>
-        <div class="offer__item--wide">
+        <div class="offer__item offer__item--wide">
           <h3 class="offer__title">Эффект на 24 часа!</h3>
           <p class="offer__descr">Британские ученые провели исследования и доказали, что положительные эффект от использования приложения длится целые сутки!</p>
           <a class="offer__study" href="">Узнать больше об исследовании</a>
@@ -69,7 +71,7 @@
         <div class="review__wrapper slider">
           <div class="review__item slider__inner">
             <blockquote class="review__person slider__item">
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <p class="review__post">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
               <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__profession">водитель трамвая, 25 лет</p>
@@ -78,7 +80,7 @@
           </div>
           <div class="review__item slider__inner">
             <blockquote class="review__person slider__item">
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <p class="review__post">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
               <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__profession">водитель трамвая, 25 лет</p>
@@ -87,7 +89,7 @@
           </div>
           <div class="review__item slider__inner">
             <blockquote class="review__person slider__item">
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <p class="review__post">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
               <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
                 <p class="review__profession">водитель трамвая, 25 лет</p>
@@ -99,11 +101,11 @@
       </section>
       <table class="rate">
         <tr class="rate__line">
-          <td class="rate__name">База 1,99 USD
+          <td class="rate__name"> База <span class="rate__price">1,99 USD</span>
           </td>
-          <td class="rate__name">Стандарт 3,99 USD
+          <td class="rate__name">Стандарт <span class="rate__price">3,99 USD</span>
           </td>
-          <td class="rate__name">Анлим 9,99 USD
+          <td class="rate__name">Анлим <span class="rate__price">9,99 USD</span>
           </td>
         </tr>
         <tr class="rate__line">
@@ -144,11 +146,11 @@
             <a class="contacts__link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
           <p class="contacts__item">Пишите:</p>
             <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <p class="contacts__item">Приезжайте в гости: ул. Большая Конюшенная, 19/8</p>
+          <p class="contacts__item">Приезжайте в гости:<a class="contacts__link"> ул. Большая Конюшенная, 19/8</a></p>
         </div>
       </section>
       <div class="map">
-        <img  class="map__image" src="http://placeholder.it" alt="Карта">
+        <img  class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта">
       </div>
     </main>
     <footer class="page-footer">
