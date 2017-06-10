@@ -1,6 +1,11 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   @mixin container;
   background-color: $bg-color-dark-grey;
+  @media (min-width:$desktop-width) {
+    flex-direction: row;
+  }
 }
 .page-header__title-visually-hidden {
   position: absolute;

@@ -1,10 +1,21 @@
+.main-nav__toogler {
+  @media (min-width:$desktop-width) {
+    display: none;
+  }
+}
 .main-nav__list{
   display: flex;
   flex-direction: column;
   list-style: none;
   font-size: 0;
   padding: 0;
+  @media (min-width:$desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
+
 .main-nav__item {
   font-family: $font-bold;
   font-size: 18px;

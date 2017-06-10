@@ -3,6 +3,7 @@
   background-color: #2c3c4c;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .promo-wrapper-second {
   background-color: $bg-color-dark-grey;

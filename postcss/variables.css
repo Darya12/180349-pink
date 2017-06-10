@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1000px;
+
 $font-regular: "Open Sans", "Helvetica", san-serif;
 $font-bold: "Open Sans bold", "Helvetica", san-serif;
 $font-light: "Open Sans light", "Helvetica", san-serif;
