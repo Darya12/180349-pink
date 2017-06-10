@@ -1,15 +1,27 @@
-.promo {
+.promo__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #2c3c4c;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.promo-wrapper-second {
+  background-color: $bg-color-dark-grey;
+}
 .promo__title {
   @mixin body-title-2;
   font-weight: 300;
+  margin: 20px;
+  padding-bottom: 88px;
+  text-align: center;
+}
+.promo__hand {
+  padding-top: 109px;
 }
 .promo__link-market {
   background-color: $bg-color-dark-grey;
+  margin: 28px 20px;
+  text-align: center;
+
   &:hover {
     background-color: $bg-color;
     color: $link-color-hover;
@@ -18,16 +30,24 @@
     color: color($link-color-hover lightness(70%));
   }
 }
+.link__market {
+  margin: 20px;
+  text-align: center;
+}
 .promo__available {
   @mixin body-title-2;
   font-size: 14px;
   line-height: 24px;
+  margin: 20px;
+  padding-bottom: 32px;
+  text-align: center;
 }
 .promo__text {
   @mixin body-text;
   font-weight: 300;
   background-color: $bg-color;
-  margin: 0;
+  padding: 46px 35px;
+  text-align: center;
   &--big {
     font-size: 24px;
   }

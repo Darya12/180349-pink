@@ -1,11 +1,18 @@
-.offer__item {
+.offer {
   background-color: $bg-color-block;
+}
+.offer__item {
+  margin: 20px;
+  text-align: center;
 }
 .offer__title {
   @mixin index-title-3;
 }
 .offer__descr {
   @mixin body-text;
+}
+.offer__image {
+  padding-top: 43px;
 }
 .offer__item--wide {
   display: none;

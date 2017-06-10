@@ -1,5 +1,12 @@
+.review__person {
+  margin: 0px 20px;
+  text-align: center;
+}
 .review__author {
   @mixin index-title-3;
+}
+.review__profession {
+  display: none;
 }
 .review__post {
   @mixin body-text;

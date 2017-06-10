@@ -1,7 +1,10 @@
+.contacts {
+  margin: 20px;
+  text-align: center;
+}
 .contacts__title {
   @mixin body-text;
   background-color: $bg-color;
-  margin: 0;
   font-size: 24px;
 }
 .contacts__item {
@@ -18,6 +21,6 @@
     text-decoration: underline;
   }
   &:active {
-    opacity: 0.3; 
+    opacity: 0.3;
   }
 }

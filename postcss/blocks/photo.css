@@ -1,10 +1,18 @@
+.photo__item {
+  margin: 20px;
+  &--look {
+    margin: 0;
+  }
+}
 .photo__picture{
   background-color: #9ba6a9;
 }
 .photo__descr {
   background-color: $bg-color-block;
-  margin: 0;
   padding-left: 18px;
+  &--look {
+    margin: 20px;
+  }
 }
 .photo__author {
   @mixin body-text;

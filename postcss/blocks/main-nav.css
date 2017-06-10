@@ -1,4 +1,6 @@
 .main-nav__list{
+  display: flex;
+  flex-direction: column;
   list-style: none;
   font-size: 0;
   padding: 0;
@@ -7,6 +9,9 @@
   font-family: $font-bold;
   font-size: 18px;
   line-height: 32px;
+  padding: 16px;
+  border-bottom: 1px solid black;
+  text-align: center;
   cursor: pointer;
     &:hover>a {
       color: $link-color-hover;

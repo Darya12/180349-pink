@@ -1,6 +1,3 @@
-.competition__form-title {
-  @mixin body-title-3;
-}
 .field-text {
   @mixin body-text;
   line-height: 30px;

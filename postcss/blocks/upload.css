@@ -24,3 +24,10 @@
     color: color($btn-color-border lightness(90%));
   }
 }
+.upload__block {
+  margin: 20px;
+}
+.upload__btn {
+  width: 100%;
+  margin-bottom: 12px;
+}
