@@ -3,6 +3,13 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   width: 232px;
+
+  &:hover {
+    border: 2px solid $bg-color-dark-grey;
+  }
+  &:active {
+    border: 2px solid $font-body-invert-color;
+  }
 }
 .field-input--checkbox {
   width: auto;

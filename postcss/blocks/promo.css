@@ -46,7 +46,8 @@
   @mixin body-text;
   font-weight: 300;
   background-color: $bg-color;
-  padding: 46px 35px;
+  padding-left: 35px;
+  padding-right: 35px;
   text-align: center;
   &--big {
     font-size: 24px;
