@@ -3,6 +3,8 @@
   flex-direction: column;
   @mixin container;
   background-color: $bg-color-dark-grey;
+  justify-content: space-between;
+
   @media (min-width:$desktop-width) {
     flex-direction: row;
   }

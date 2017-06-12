@@ -1,4 +1,20 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid green;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .main-nav__toogler {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  z-index: 1;
+
   @media (min-width:$desktop-width) {
     display: none;
   }
@@ -9,10 +25,12 @@
   list-style: none;
   font-size: 0;
   padding: 0;
+  outline: 1px solid blue;
+
   @media (min-width:$desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -24,9 +42,22 @@
   border-bottom: 1px solid black;
   text-align: center;
   cursor: pointer;
-    &:hover>a {
-      color: $link-color-hover;
+  &:hover>a {
+    color: $link-color-hover;
+  }
+  &:first-child {
+    padding-left: 0px;
+  }
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      padding-right: 0px;
     }
+  }
+
+  @media (min-width:$desktop-width) {
+    border-bottom: none;
+    padding-right: 82px;
+  }
 }
 .main-nav__link {
   color: $link-color;
