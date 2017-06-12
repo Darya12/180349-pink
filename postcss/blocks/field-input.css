@@ -1,19 +1,19 @@
 .field-input {
   padding: 15px 22px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $light-grey;
   border-radius: 1px;
   width: 232px;
 
   &:hover {
-    border: 2px solid $bg-color-dark-grey;
+    border: 2px solid $dark-grey;
   }
   &:active {
-    border: 2px solid $font-body-invert-color;
+    border: 2px solid $pink-color;
   }
-}
-.field-input--checkbox {
-  width: auto;
-}
-.field-input--radio {
-  width: auto;
+  &--checkbox {
+    width: auto;
+  }
+  &--radio {
+    width: auto;
+  }
 }

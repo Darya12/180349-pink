@@ -1,10 +1,10 @@
 .rate__name {
   @mixin btn-form;
-  background-color: $bg-color-dark-grey;
+  background-color: $dark-grey;
   text-transform: uppercase;
 }
 .rate__price {
-  @mixin body-title-2;
+  @mixin body-title;
   line-height: 30px;
 }
 .rate__item {

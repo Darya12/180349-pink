@@ -2,7 +2,7 @@
   @mixin body-text;
   line-height: 30px;
     &--invert {
-    color: $font-body-invert-color;
+    color: $pink-color;
     text-transform: uppercase;
   }
 }

@@ -1,12 +1,12 @@
 .offer {
-  background-color: $bg-color-block;
+  background-color: $grey-color;
 }
 .offer__item {
   margin: 20px;
   text-align: center;
 }
 .offer__title {
-  @mixin index-title-3;
+  @mixin block-title-index;
 }
 .offer__descr {
   @mixin body-text;

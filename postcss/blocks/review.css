@@ -3,7 +3,7 @@
   text-align: center;
 }
 .review__author {
-  @mixin index-title-3;
+  @mixin block-title-index;
 }
 .review__profession {
   display: none;

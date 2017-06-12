@@ -1,28 +1,32 @@
 $tablet-width: 660px;
-$desktop-width: 1000px;
+$desktop-width: 1200px;
 
 $font-regular: "Open Sans", "Helvetica", san-serif;
 $font-bold: "Open Sans bold", "Helvetica", san-serif;
 $font-light: "Open Sans light", "Helvetica", san-serif;
 
 $font-body-size: 14px;
-$font-h2-size: 24px;
-$font-h3-size: 14px;
+$font-title-size: 24px;
 
-$font-body-color: #283645;
-$font-body-invert-color:#d22856;
-$font-h2-color: #ffffff;
-$font-h3-color: #d22856;
-$font-form-color: #ffffff;
+$black-color: #000000;
+$dark-grey: #283645;
+$light-grey: #e5e5e5;
+$grey-color: #f2f2f2;
+$pink-color: #d22856;
+$white-color: #ffffff;
+$green-color: #2aab6d;
+$green-dark: #1c9b5e;
 
 
+
+/*На случай, если где-то упустила.
 $bg-color: #ffffff;
 $bg-color-block: #f2f2f2;
-$bg-color-dark-grey: #283645;
+$dark-grey: #283645;
 $btn-color-border:#283645;
 $btn-form-color: #2aab6d;
 
 $link-color: #ffffff;
 $link-color-hover: #d22856;
 
-$btn-form-hover-color: #1c9b5e;
+$btn-form-hover-color: #1c9b5e;*/

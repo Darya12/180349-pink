@@ -2,35 +2,35 @@
   width: 320px;
   margin: 0 auto;
 
-  @media (min-width:$tablet-width){
+  @media (min-width: $tablet-width) {
     width: 660px;
   }
-  @media (min-width:$desktop-width){
-    width: 1000px;
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 @define-mixin body-text {
   font-family: $font-regular;
   font-size: $font-body-size;
   line-height: 24px;
-  color: $font-body-color;
+  color: $body-color;
 }
-@define-mixin body-title-2 {
+@define-mixin body-title {
   font-family: $font-light;
-  font-size: $font-h2-size;
-  color: $font-h2-color;
+  font-size: $font-title-size;
+  color: $white-color;
 }
-@define-mixin body-title-3 {
+@define-mixin block-title {
   font-family: $font-regular;
-  font-size: $font-h3-size;
-  color: $font-h3-color;
+  font-size: $font-body-size;
+  color: $pink-color;
   line-height: 18px;
 }
-@define-mixin index-title-3 {
+@define-mixin block-title-index {
   font-family:$font-bold;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: $black-color;
 }
 @define-mixin btn-form {
   font-family: $font-bold;

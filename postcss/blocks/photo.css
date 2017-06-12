@@ -5,10 +5,10 @@
   }
 }
 .photo__picture{
-  background-color: #9ba6a9;
+  background-color: $grey-color;
 }
 .photo__descr {
-  background-color: $bg-color-block;
+  background-color: $grey-color;
   padding-left: 18px;
   &--look {
     margin: 20px;
@@ -16,11 +16,11 @@
 }
 .photo__author {
   @mixin body-text;
-  font-family: "Open Sans bold";
+  font-family: $font-bold;
 }
 .photo__time{
   @mixin body-text;
-  font-family: "Open Sans light";
+  font-family: $font-light;
   text-transform: uppercase;
 }
 .photo__comment {
@@ -28,6 +28,6 @@
 }
 .photo__like {
   @mixin body-text;
-  color: #d22856;
+  color: $pink-color;
   text-transform: uppercase;
 }

@@ -4,13 +4,13 @@
 .competition__form {
   display: flex;
   flex-direction: column;
-  background-color: $bg-color;
+  background-color: $white-color;
     &--invert {
-      background-color: $bg-color-block;
+      background-color: $grey-color;
     }
 }
 .competition__form-title {
-  @mixin body-title-3;
+  @mixin block-title;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -25,20 +25,20 @@
 }
 .competition__btn {
   @mixin btn-form;
-  color: $font-form-color;
-  background-color: $btn-form-color;
+  color: $white-color;
+  background-color: $green-color;
   border: none;
   border-radius: 3px;
   padding: 16px 47px;
   cursor: pointer;
   width: 100%;
     &:hover {
-      background-color:$btn-form-hover-color;
+      background-color: $green-dark;
     }
     &:active {
-      color: color($btn-form-color lightness(70%));
+      color: color($green-color lightness(70%));
     }
     &:disabled {
-      background-color: #e5e5e5;
+      background-color: $light-grey;
     }
 }

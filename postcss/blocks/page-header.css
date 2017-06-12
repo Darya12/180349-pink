@@ -2,20 +2,13 @@
   display: flex;
   flex-direction: column;
   @mixin container;
-  background-color: $bg-color-dark-grey;
+  background-color: $dark-grey;
   justify-content: space-between;
 
   @media (min-width:$desktop-width) {
     flex-direction: row;
   }
 }
-.page-header__title-visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.page-header__title {
+  display: none;
 }
