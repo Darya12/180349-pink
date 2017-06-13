@@ -1,9 +1,9 @@
-$tablet-width: 660px;
-$desktop-width: 1200px;
+$tablet-width: ~("min-width: 660px");
+$desktop-width: ~("min-width: 1200px");
 
-$font-regular: "Open Sans", "Helvetica", san-serif;
-$font-bold: "Open Sans bold", "Helvetica", san-serif;
-$font-light: "Open Sans light", "Helvetica", san-serif;
+$font-regular: "Open Sans", "Helvetica", sans-serif;
+$font-bold: "Open Sans bold", "Helvetica", sans-serif;
+$font-light: "Open Sans light", "Helvetica", sans-serif;
 
 $font-body-size: 14px;
 $font-title-size: 24px;

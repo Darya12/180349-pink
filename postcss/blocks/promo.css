@@ -32,12 +32,8 @@
     color: color($pink-color lightness(70%));
   }
 }
-.link__market {
-  margin: 20px;
-  text-align: center;
-}
 .promo__available {
-  @mixin body-title-2;
+  @mixin body-title;
   font-size: 14px;
   line-height: 24px;
   margin: 20px;

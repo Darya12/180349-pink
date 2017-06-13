@@ -4,7 +4,7 @@
   flex-direction: column;
   outline: 1px solid green;
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop-width) {
     margin-right: 130px;
     flex-direction: row;
     align-items: center;
@@ -16,7 +16,7 @@
   right: 0;
   z-index: 1;
 
-  @media (min-width:$desktop-width) {
+  @media (desktop-width) {
     display: none;
   }
 }
@@ -28,7 +28,7 @@
   padding: 0;
   outline: 1px solid blue;
 
-  @media (min-width:$desktop-width) {
+  @media ($desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -44,24 +44,24 @@
   text-align: center;
   cursor: pointer;
   &:hover> .main-nav__link {
-    color: $link-color-hover;
+    color: $pink-color;
   }
   &:first-child {
     padding-left: 0px;
   }
   &:last-child {
-    @media (min-width: $desktop-width) {
+    @media ($desktop-width) {
       padding-right: 0px;
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media ($desktop-width) {
     border-bottom: none;
     padding-right: 82px;
   }
 }
 .main-nav__link {
-  color: $link-color;
+  color: $white-color;
   text-decoration: none;
     &:active {
     opacity: 0.3;
