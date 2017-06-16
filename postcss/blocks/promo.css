@@ -3,31 +3,48 @@
   flex-direction: column;
 }
 .promo__wrapper {
-  margin-top: -109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @mixin inner-container;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #2c3c4c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  outline: 2px solid orange;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.promo__hand {
+  outline: 1px solid blue;
 }
 .promo__content {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   background-color: $menu-color;
+  outline: 1px solid red;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 .promo__title {
   display: none;
   text-align: center;
   @mixin title;
+  font-size: 40px;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
 }
-.promo__hand {
-  padding-top: 218px;
-}
 .promo__link-market {
-  margin: 28px 20px;
   text-align: center;
   color: $color-white;
   background-color: $menu-color;

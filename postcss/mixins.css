@@ -2,11 +2,23 @@
   width: 320px;
   margin: 0 auto;
 
-  @media ($tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 660px;
   }
-  @media ($desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1200px;
+  }
+}
+@define-mixin inner-container {
+  width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 130px;
   }
 }
 @define-mixin text {
@@ -28,13 +40,13 @@
 }
 @define-mixin block-title-index {
   font-family:$font-bold;
-  font-size: 18px;
+  font-size: $font-more-size;
   line-height: 24px;
   color: $color-black;
 }
 @define-mixin btn-form {
   font-family: $font-bold;
   color: $white-color;
-  font-size: 18px;
+  font-size: $font-more-size;
   line-height: 30px;
 }
