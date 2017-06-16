@@ -9,6 +9,6 @@
   display: none;
 }
 .review__post {
-  @mixin body-text;
+  @mixin text;
   line-height: 30px;
 }

@@ -5,29 +5,29 @@
   }
 }
 .photo__picture{
-  background-color: $grey-color;
+  background-color: $color-smoke;
 }
 .photo__descr {
-  background-color: $grey-color;
   padding-left: 18px;
+  background-color: $color-smoke;
   &--look {
     margin: 20px;
   }
 }
 .photo__author {
-  @mixin body-text;
+  @mixin text;
   font-family: $font-bold;
 }
 .photo__time{
-  @mixin body-text;
+  @mixin text;
   font-family: $font-light;
   text-transform: uppercase;
 }
 .photo__comment {
-  @mixin body-text;
+  @mixin text;
 }
 .photo__like {
-  @mixin body-text;
-  color: $pink-color;
+  @mixin text;
+  color: $color-pink;
   text-transform: uppercase;
 }

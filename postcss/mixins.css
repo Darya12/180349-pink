@@ -9,32 +9,32 @@
     width: 1200px;
   }
 }
-@define-mixin body-text {
+@define-mixin text {
   font-family: $font-regular;
-  font-size: $font-body-size;
+  font-size: $font-text-size;
   line-height: 24px;
-  color: $body-color;
+  color: $text-color;
 }
-@define-mixin body-title {
+@define-mixin title {
   font-family: $font-light;
   font-size: $font-title-size;
-  color: $white-color;
+  color: $color-white;
 }
 @define-mixin block-title {
   font-family: $font-regular;
-  font-size: $font-body-size;
-  color: $pink-color;
+  font-size: $font-text-size;
+  color: $color-pink;
   line-height: 18px;
 }
 @define-mixin block-title-index {
   font-family:$font-bold;
   font-size: 18px;
   line-height: 24px;
-  color: $black-color;
+  color: $color-black;
 }
 @define-mixin btn-form {
   font-family: $font-bold;
-  color: $font-form-color;
+  color: $white-color;
   font-size: 18px;
   line-height: 30px;
 }

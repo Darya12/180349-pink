@@ -1,3 +1,7 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+}
 .promo__wrapper {
   margin-top: -109px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -7,46 +11,50 @@
   background-position: center;
 }
 .promo__content {
-  background-color: $dark-grey;
+  background-color: $menu-color;
 }
 .promo__title {
-  @mixin body-title;
-  font-weight: 300;
-  margin: 20px;
-  padding-bottom: 88px;
+  display: none;
   text-align: center;
+  @mixin title;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 .promo__hand {
   padding-top: 218px;
 }
 .promo__link-market {
-  background-color: $dark-grey;
   margin: 28px 20px;
   text-align: center;
+  color: $color-white;
+  background-color: $menu-color;
 
   &:hover {
-    background-color: $white-color;
-    color: $pink-color;
+    color: $color-pink;
+    background-color: $color-white;
   }
   &:active {
-    color: color($pink-color lightness(70%));
+    color: color($color-pink lightness(70%));
   }
 }
 .promo__available {
-  @mixin body-title;
-  font-size: 14px;
-  line-height: 24px;
   margin: 20px;
   padding-bottom: 32px;
   text-align: center;
+  @mixin title;
+  font-size: $font-text-size;
+  line-height: 24px;
 }
 .promo__text {
-  @mixin body-text;
-  font-weight: 300;
-  background-color: $white-color;
   padding-left: 35px;
   padding-right: 35px;
   text-align: center;
+  @mixin text;
+  font-weight: 300;
+  background-color: $color-white;
   &--big {
     font-size: 24px;
   }

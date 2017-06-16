@@ -1,5 +1,5 @@
 .copyright__text {
-  @mixin body-text;
-  font-size: 14px;
+  @mixin text;
+  font-size: $font-text-size;
   line-height: 18px;
 }

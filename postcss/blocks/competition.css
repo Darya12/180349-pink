@@ -4,41 +4,41 @@
 .competition__form {
   display: flex;
   flex-direction: column;
-  background-color: $white-color;
+  background-color: $color-white;
     &--invert {
-      background-color: $grey-color;
+      background-color: $color-smoke;
     }
 }
 .competition__form-title {
+  padding-left: 20px;
+  padding-right: 20px;
   @mixin block-title;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .competition__addition {
-  @mixin body-text;
+  @mixin text;
   line-height: 30px;
   text-transform: uppercase;
 }
 .competition__btn {
+  width: 100%;
+  padding: 16px 47px;
   @mixin btn-form;
-  color: $white-color;
-  background-color: $green-color;
+  color: $color-white;
+  background-color: $color-green;
   border: none;
   border-radius: 3px;
-  padding: 16px 47px;
   cursor: pointer;
-  width: 100%;
-    &:hover {
-      background-color: $green-dark;
-    }
+    /*&:hover {
+      background-color:
+    }*/
     &:active {
-      color: color($green-color lightness(70%));
+      color: color($color-green lightness(70%));
     }
     &:disabled {
-      background-color: $light-grey;
+      background-color: $color-grey;
     }
 }

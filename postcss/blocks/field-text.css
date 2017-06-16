@@ -1,18 +1,18 @@
 .field-text {
-  @mixin body-text;
+  @mixin text;
   line-height: 30px;
     &--invert {
-    color: $pink-color;
+    color: $color-pink;
     text-transform: uppercase;
   }
 }
 .field-input::-webkit-input-placeholder {
-  @mixin body-text;
-  font-size: 18px;
+  @mixin text;
+  font-size: $font-more-size;
   line-height: 30px;
 }
 .field-input:-moz-placeholder {
-  @mixin body-text;
-  font-size: 18px;
+  @mixin text;
+  font-size: $font-more-size;
   line-height: 30px;
 }

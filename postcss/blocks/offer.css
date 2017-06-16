@@ -1,5 +1,5 @@
 .offer {
-  background-color: $grey-color;
+  background-color: $color-smoke;
 }
 .offer__item {
   margin: 20px;
@@ -9,7 +9,7 @@
   @mixin block-title-index;
 }
 .offer__descr {
-  @mixin body-text;
+  @mixin text;
 }
 .offer__image {
   padding-top: 43px;

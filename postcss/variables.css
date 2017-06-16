@@ -1,32 +1,23 @@
-$tablet-width: ~("min-width: 660px");
-$desktop-width: ~("min-width: 1200px");
+$tablet-width: ("min-width:660px");
+$desktop-width: ("min-width:1200px");
 
 $font-regular: "Open Sans", "Helvetica", sans-serif;
 $font-bold: "Open Sans bold", "Helvetica", sans-serif;
 $font-light: "Open Sans light", "Helvetica", sans-serif;
 
-$font-body-size: 14px;
+$font-text-size: 14px;
+$font-more-size: 18px;
 $font-title-size: 24px;
 
-$black-color: #000000;
-$dark-grey: #283645;
-$light-grey: #e5e5e5;
-$grey-color: #f2f2f2;
-$pink-color: #d22856;
-$white-color: #ffffff;
-$green-color: #2aab6d;
-$green-dark: #1c9b5e;
 
+$color-outer-space: #283645;
+$color-grey: #e5e5e5;
+$color-smoke: #f2f2f2;
+$color-pink: #d22856;
+$color-white: #ffffff;
+$color-green: #2aab6d;
+$color-black: #000000;
 
-
-/*На случай, если где-то упустила.
-$bg-color: #ffffff;
-$bg-color-block: #f2f2f2;
-$dark-grey: #283645;
-$btn-color-border:#283645;
-$btn-form-color: #2aab6d;
-
-$link-color: #ffffff;
-$link-color-hover: #d22856;
-
-$btn-form-hover-color: #1c9b5e;*/
+$menu-color: $color-outer-space;
+$text-color: $color-outer-space;
+$bg-color: $color-white;

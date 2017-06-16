@@ -1,9 +1,9 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  @mixin container;
-  background-color: $dark-grey;
   justify-content: space-between;
+  @mixin container;
+  background-color: $menu-color;
 
   @media (min-width:$desktop-width) {
     flex-direction: row;

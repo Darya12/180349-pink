@@ -1,4 +1,9 @@
 .page-footer {
+  display: none;
   @mixin container;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

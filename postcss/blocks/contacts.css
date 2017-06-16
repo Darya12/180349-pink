@@ -3,21 +3,21 @@
   text-align: center;
 }
 .contacts__title {
-  @mixin body-text;
-  background-color: $white-color;
-  font-size: 24px;
+  @mixin text;
+  font-size: $font-title-size;
+  background-color: $bg-color;
 }
 .contacts__item {
   @mixin btn-form;
-  color: $dark-grey;
+  color: $text-color;
 }
 .contacts__link {
-  @mixin body-text;
-  color: $pink-color;
-  font-size: 24px;
+  @mixin text;
+  color: color-pink;
+  font-size: $font-title-size;
   text-decoration: none;
   &:hover {
-    color:$dark-grey;
+    color:$text-color;
     text-decoration: underline;
   }
   &:active {

@@ -1,27 +1,27 @@
 .upload__btn {
-  border: 3px solid $pink-color;
   color: $pink-color;
-  background-color: $white-color;
+  background-color: $bg-color;
+  border: 3px solid $color-pink;
   &:hover {
-    background-color:$pink-color;
-    color: $white-color;
+    background-color:$color-pink;
+    color: $color-white;
   }
   &:active {
-    background-color:$pink-color;
-    color: color($pink-color lightness(70%));
+    color: color($color-pink lightness(70%));
+    background-color:$color-pink;
   }
 }
 .upload__btn--invert {
-  border: 3px solid color($dark-grey lightness(90%));
-  color: color($dark-grey lightness(90%));
+  color: color($menu-color lightness(90%));
+  border: 3px solid color($menu-color lightness(90%));
   &:hover {
-    border: 3px solid color($dark-grey lightness(70%));
-    color: color($dark-grey lightness(70%));
-    background-color: $white-color;
+    color: color($menu-color lightness(70%));
+    background-color: $bg-color;
+    border: 3px solid color($menu-color lightness(70%));
   }
   &:active {
-    background-color: color($dark-grey lightness(70%));
-    color: color($dark-grey lightness(90%));
+    color: color($menu-color lightness(90%));
+    background-color: color($menu-color lightness(70%));
   }
 }
 .upload__block {
