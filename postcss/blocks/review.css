@@ -1,3 +1,7 @@
+.review {
+  @mixin inner-container;
+  outline: 1px solid green;
+}
 .review__person {
   margin: 0px 20px;
   text-align: center;

@@ -1,6 +1,7 @@
 .page-footer {
   display: none;
   @mixin container;
+  @mixin inner-container;
   text-align: center;
 
   @media (min-width: $tablet-width) {

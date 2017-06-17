@@ -88,12 +88,12 @@
   }
 }
 .offer__item--wide {
-  width: 100%;
   display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
+    width: auto;
   }
 }
 .offer__wrapper-item {

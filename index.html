@@ -86,7 +86,7 @@
       <section class="review">
         <div class="review__wrapper slider">
           <div class="review__item slider__inner">
-            <blockquote class="review__person slider__item">
+            <blockquote class="review__person slider__item ">
               <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
@@ -95,7 +95,7 @@
             </blockquote>
           </div>
           <div class="review__item slider__inner">
-            <blockquote class="review__person slider__item">
+            <blockquote class="review__person  slider__item">
               <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <footer class="review-cite">
                 <cite class="review__author">Николай Петров</cite>
@@ -113,7 +113,14 @@
             </blockquote>
           </div>
         </div>
-        <span class="review__toogler"></span>
+        <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-1" checked>
+        <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-2">
+        <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-3">
+        <div class="slider__labels">
+          <label class="slider__label slider__label--active" for="slider__toogle-1"></label>
+          <label class="slider__label" for="slider__toogle-2"></label>
+          <label class="slider__label" for="slider__toogle-3"></label>
+        </div>
       </section>
       <table class="rate">
         <tr class="rate__line">
@@ -157,12 +164,19 @@
       </table>
       <section class="contacts">
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts_descr">
-          <p class="contacts__item">Звоните:</p>
+        <div class="contacts__descr">
+          <div class="contacts__wrapper">
+            <p class="contacts__item">Звоните:</p>
             <a class="contacts__link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
-          <p class="contacts__item">Пишите:</p>
+          </div>
+          <div class="contacts__wrapper contacts__wrapper--desktop">
+            <p class="contacts__item">Пишите:</p>
             <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <p class="contacts__item">Приезжайте в гости: <a class="contacts__link"> ул. Большая Конюшенная, 19/8</a></p>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__item">Приезжайте в гости: </p>
+            <a class="contacts__link"> ул. Большая Конюшенная, 19/8</a>
+          </div>
         </div>
       </section>
       <div class="map">
