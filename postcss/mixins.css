@@ -17,8 +17,8 @@
     width: 620px;
   }
   @media (min-width: $desktop-width) {
-    width: 940px;
-    padding: 0 130px;
+    width: 960px;
+    padding: 0 120px;
   }
 }
 @define-mixin text {

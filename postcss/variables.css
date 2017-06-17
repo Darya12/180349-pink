@@ -8,6 +8,8 @@ $font-light: "Open Sans light", "Helvetica", sans-serif;
 $font-text-size: 14px;
 $font-more-size: 18px;
 $font-title-size: 24px;
+$font-tablet-size: 40px;
+$font-desktop-size: 50px;
 
 
 $color-outer-space: #283645;

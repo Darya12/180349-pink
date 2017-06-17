@@ -25,7 +25,7 @@
 .promo__content {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 320px;
   background-color: $menu-color;
   outline: 1px solid red;
 
@@ -36,15 +36,21 @@
 .promo__title {
   display: none;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
   @mixin title;
-  font-size: 40px;
   font-weight: 300;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width:$tablet-width) {
     display: block;
+    font-size: $font-tablet-size;
+  }
+  @media (min-width:$desktop-width) {
+    font-size: $font-desktop-size;
   }
 }
 .promo__link-market {
+  margin: 0 20px;
   text-align: center;
   color: $color-white;
   background-color: $menu-color;
@@ -56,6 +62,9 @@
   &:active {
     color: color($color-pink lightness(70%));
   }
+  @media (min-width:$tablet-width) {
+    margin: 10px;
+  }
 }
 .promo__available {
   margin: 20px;
@@ -65,14 +74,26 @@
   font-size: $font-text-size;
   line-height: 24px;
 }
+.promo__slogan {
+  @mixin inner-container;
+}
 .promo__text {
-  padding-left: 35px;
-  padding-right: 35px;
   text-align: center;
   @mixin text;
-  font-weight: 300;
+  font-family: $font-light;
   background-color: $color-white;
+  outline: 1px solid grey;
   &--big {
-    font-size: 24px;
+    font-size: $font-title-size;
+  }
+
+  @media (min-width:$tablet-width) {
+    font-size: $font-tablet-size;
+    line-height: 40px;
+  }
+  @media (min-width:$desktop-width) {
+    padding: 0 60px;
+    font-size: $font-desktop-size;
+    line-height: 50px;
   }
 }

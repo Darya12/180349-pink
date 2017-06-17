@@ -43,7 +43,8 @@
   font-family: $font-bold;
   font-size: $font-more-size;
   line-height: 32px;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
   cursor: pointer;
   &:hover>.main-nav__link {
     color: $color-pink;
