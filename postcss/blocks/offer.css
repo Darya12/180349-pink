@@ -1,7 +1,7 @@
 .offer {
+  @mixin inner-container;
   display: flex;
   flex-direction: column;
-  @mixin inner-container;
   background-color: $color-smoke;
 }
 .offer__wrapper {

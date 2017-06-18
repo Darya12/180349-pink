@@ -1,9 +1,9 @@
 .page-footer {
+  @mixin container;
+  @mixin inner-container;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @mixin container;
-  @mixin inner-container;
   text-align: center;
   outline: 1px solid blue;
   &--index {

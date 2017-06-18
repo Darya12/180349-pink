@@ -1,7 +1,7 @@
 .btn {
+  @mixin btn-form;
   display: inline-block;
   padding: 15px;
-  @mixin btn-form;
   line-height: 18px;
   text-decoration: none;
   border: 3px solid $color-white;

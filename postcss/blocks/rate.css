@@ -1,3 +1,6 @@
+.rate {
+  display: flex;
+}
 .rate__name {
   @mixin btn-form;
   background-color: $menu-color;

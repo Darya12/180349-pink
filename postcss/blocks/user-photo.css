@@ -1,6 +1,9 @@
+.user-photo {
+  display: flex;
+}
 .user-photo__invoke {
+  @mixin text;
   padding: 0;
   text-align: center;
-  @mixin text;
   background-color: $bg-color;
 }
