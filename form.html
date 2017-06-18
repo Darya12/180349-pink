@@ -40,11 +40,11 @@
           </div>
         </div>
         <div class="promo__slogan">
-          <p class="promo__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <p class="promo__text promo__text--small">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         </div>
       </section>
       <form class="competition" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="competition__form">
+        <div class="competition__form competition__form--name">
           <label class="field-text field-text--invert">Фамилия:
             <input class="field-input" type="text" placeholder="Укажите фамилию *" name="name">
           </label>
@@ -55,28 +55,29 @@
             <input class="field-input" type="text" placeholder="Ну и отчество тоже" name="name">
           </label>
         </div>
-        <div class="competition__form competition__form--invert">
+        <div class="competition__form competition__form--achievements">
           <h3 class="competition__form-title">Ваши безбашенные достижения в путешествии</h3>
-          <label class="field-text">
+          <label class="field-text field-text__narrow">
             <input class="field-input field-input--checkbox" type="checkbox" checked>Сделал селфи с акулой
           </label>
-          <label class="field-text">
+          <label class="field-text field-text__narrow">
             <input class="field-input field-input--checkbox" type="checkbox" checked>Обгорел на пляже
           </label>
-          <label class="field-text">
+          <label class="field-text field-text__narrow">
             <input class="field-input field-input--checkbox" type="checkbox">Видел Чака Норриса
           </label>
-          <label class="field-text">
+          <label class="field-text field-text__narrow">
             <input class="field-input field-input--checkbox" type="checkbox">Накупил сувениров
           </label>
-          <label class="field-text">
+          <label class="field-text field-text__narrow">
             <input class="field-input field-input--checkbox" type="checkbox" checked>Удержал башню
           </label>
-          <label class="field-text">
+          <label class="field-text field-text__narrow">
             <input class="field-input field-input--checkbox" type="checkbox">Разгромил отель
           </label>
         </div>
-        <div class="competition__form">
+        <div class="competition__form competition__form--contact">
+          <h3 class="competition__form-title competition__form-title--tablet">Контактная информация</h3>
           <label class="field-text field-text--invert">Номер телефона:
             <input class="field-input" type="text" placeholder="Номер, пожалуйста" name="tel">
           </label>
@@ -84,7 +85,7 @@
             <input class="field-input" type="text" placeholder="Введите почту *" name="email">
           </label>
         </div>
-        <div class="competition__form competition__form--invert">
+        <div class="competition__form competition__form--available">
           <h3 class="competition__form-title">С каким приложением путешествовали?</h3>
           <label class="field-text">
             <input class="field-input field-input--radio" type="radio" name="pink" checked>Pink для iOS
@@ -96,13 +97,15 @@
             <input class="field-input field-input--radio" type="radio" name="pink">Windows Phone
           </label>
         </div>
-        <div class="competition__form">
+        <div class="competition__form competition__form--textarea">
           <label class="field-text field-text--invert">Опишите свои эмоции:
             <textarea class="field-input field-input--textarea" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="textarea"></textarea>
           </label>
         </div>
-        <button class="competition__btn btn">Отправить форму</button>
-        <p class="competition__addition">* - обязательные поля</p>
+        <div class="competition__button">
+          <button class="competition__btn btn">Отправить форму</button>
+          <p class="competition__addition">* - обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">

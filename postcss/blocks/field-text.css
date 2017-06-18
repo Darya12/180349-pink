@@ -6,6 +6,11 @@
     text-transform: uppercase;
   }
 }
+.field-text__narrow {
+  @media (min-width: $tablet-width) {
+    width: 290px;
+  }
+}
 .field-input::-webkit-input-placeholder {
   @mixin text;
   font-size: $font-more-size;

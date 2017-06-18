@@ -1,13 +1,53 @@
 .competition {
-  margin: 20px;
+  @mixin inner-container;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .competition__form {
   display: flex;
   flex-direction: column;
+  order: 4;
   background-color: $color-white;
-    &--invert {
-      background-color: $color-smoke;
+  outline: 1px solid pink;
+  &--name {
+    @media (min-width: $tablet-width) {
+      order: 1;
     }
+    @media (min-width: $desktop-width) {
+      width: 470px;
+    }
+  }
+  &--available {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+    @media (min-width: $desktop-width) {
+      width: 470px;
+    }
+  }
+  &--contact {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 940px;
+    }
+  }
+  &--achievements,
+  &--textarea {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 940px;
+    }
+  }
 }
 .competition__form-title {
   padding-left: 20px;
@@ -17,6 +57,16 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  &--tablet {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+.competition__button {
+  flex-direction: row;
+  order: 6;
 }
 .competition__addition {
   @mixin text;
@@ -24,7 +74,6 @@
   text-transform: uppercase;
 }
 .competition__btn {
-  width: 100%;
   padding: 16px 47px;
   @mixin btn-form;
   color: $color-white;

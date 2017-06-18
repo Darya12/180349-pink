@@ -100,11 +100,9 @@
   text-align: center;
   @mixin text;
   font-family: $font-light;
+  font-size: $font-title-size;
   background-color: $color-white;
   outline: 1px solid grey;
-  &--big {
-    font-size: $font-title-size;
-  }
 
   @media (min-width:$tablet-width) {
     font-size: $font-tablet-size;
@@ -114,5 +112,8 @@
     padding: 0 60px;
     font-size: $font-desktop-size;
     line-height: 50px;
+  }
+  &--small {
+    font-size: $font-more-size;
   }
 }
