@@ -1,22 +1,53 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+}
+.photo__look {
+  width: 100%;
+  outline: 1px solid pink;
+}
+.photo__descr-look-wrapper {
+  @mixin inner-container;
+}
+.photo__descr-look {
+  padding: 0 26px;
+  background-color: $color-smoke;
+}
+.photo__wrapper {
+  @mixin inner-container;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .photo__item {
-  margin: 20px;
-  &--look {
-    margin: 0;
+  width: 280px;
+  outline: 1px solid blue;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
 }
 .photo__picture{
+  background-size: cover;
   background-color: $color-smoke;
 }
 .photo__descr {
-  padding-left: 18px;
+  width: 228px;
+  padding: 0 26px;
   background-color: $color-smoke;
-  &--look {
-    margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    padding: 0 26px;
   }
 }
 .photo__author {
   @mixin text;
   font-family: $font-bold;
+  &--look {
+    padding: 0 26px;
+  }
 }
 .photo__time{
   @mixin text;

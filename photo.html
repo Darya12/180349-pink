@@ -16,11 +16,11 @@
         <button class="main-nav__toogler">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">Фотографии</a>
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -40,76 +40,80 @@
         </div>
       </section>
       <section class="photo">
-        <article class="photo__item photo__item--look">
+        <article class="photo__look">
           <img class="photo__picture" src="img/panorama-mobile@1x.jpg"width="320" height="137" alt="Фото путешествия">
-          <div class="photo__descr photo__descr--look">
-            <p class="photo__author">Анна
-              <span class="photo__time">(5 минут назад)</span>
-            </p>
-            <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="photo__like">Нравится: 215</p>
+          <div class="photo__descr-look-wrapper">
+            <div class="photo__descr-look">
+              <p class="photo__author">Анна
+                <span class="photo__time">(5 минут назад)</span>
+              </p>
+              <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photo__like">Нравится: 215</p>
+            </div>
           </div>
         </article>
-        <article class="photo__item">
-          <img class="photo__picture" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
-          <div class="photo__descr">
-            <p class="photo__author">Левон
-              <span class="photo__time">(5 часов назад)</span>
-            </p>
-            <p class="photo__comment">Вчера он на луну летал, сегодня в гости к нам попал.</p>
-            <p class="photo__like">Нравится: 356</p>
-          </div>
-        </article>
-        <article class="photo__item">
-          <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
-          <div class="photo__descr">
-            <p class="photo__author">Антон
-              <span class="photo__time">(12 часов назад)</span>
-            </p>
-            <p class="photo__comment">Соседи будут рады!</p>
-            <p class="photo__like">Нравится: 666</p>
-          </div>
-        </article>
-        <article class="photo__item">
-          <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
-          <div class="photo__descr">
-            <p class="photo__author">Борис
-              <span class="photo__time">(20 часов назад)</span>
-            </p>
-            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="photo__like">Нравится: 215</p>
-          </div>
-        </article>
-        <article class="photo__item">
-          <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
-          <div class="photo__descr">
-            <p class="photo__author">Сергей
-              <span class="photo__time">(25 часов назад)</span>
-            </p>
-            <p class="photo__comment">Самая кубанская в мире!</p>
-            <p class="photo__like">Нравится: 4</p>
-          </div>
-        </article>
-        <article class="photo__item">
-          <img class="photo__picture" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
-          <div class="photo__descr">
-            <p class="photo__author">Максим
-              <span class="photo__time">(40 часов назад)</span>
-            </p>
-            <p class="photo__comment">Где снег-то?</p>
-            <p class="photo__like">Нравится: 150</p>
-          </div>
-        </article>
-        <article class="photo__item">
-          <img class="photo__picture" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
-          <div class="photo__descr">
-            <p class="photo__author">Надежда
-              <span class="photo__time">(45 часов назад)</span>
-            </p>
-            <p class="photo__comment">Всем GM и взаимные лайки!</p>
-            <p class="photo__like">Нравится: 2560</p>
-          </div>
-        </article>
+        <div class="photo__wrapper">
+          <article class="photo__item">
+            <img class="photo__picture" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
+            <div class="photo__descr">
+              <p class="photo__author">Левон
+                <span class="photo__time">(5 часов назад)</span>
+              </p>
+              <p class="photo__comment">Вчера он на луну летал, сегодня в гости к нам попал.</p>
+              <p class="photo__like">Нравится: 356</p>
+            </div>
+          </article>
+          <article class="photo__item">
+            <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
+            <div class="photo__descr">
+              <p class="photo__author">Антон
+                <span class="photo__time">(12 часов назад)</span>
+              </p>
+              <p  class="photo__comment">Соседи будут рады!</p>
+              <p class="photo__like">Нравится: 666</p>
+            </div>
+          </article>
+          <article class="photo__item">
+            <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
+            <div class="photo__descr">
+              <p class="photo__author">Борис
+                <span class="photo__time">(20 часов назад)</span>
+              </p>
+              <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo__like">Нравится: 215</p>
+            </div>
+          </article>
+          <article class="photo__item">
+            <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
+            <div class="photo__descr">
+              <p class="photo__author">Сергей
+                <span class="photo__time">(25 часов назад)</span>
+              </p>
+              <p class="photo__comment">Самая кубанская в мире!</p>
+              <p class="photo__like">Нравится: 4</p>
+            </div>
+          </article>
+          <article class="photo__item">
+            <img class="photo__picture" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
+            <div class="photo__descr">
+              <p class="photo__author">Максим
+                <span class="photo__time">(40 часов назад)</span>
+              </p>
+              <p class="photo__comment">Где снег-то?</p>
+              <p class="photo__like">Нравится: 150</p>
+            </div>
+          </article>
+          <article class="photo__item">
+            <img class="photo__picture" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Фото путешествия">
+            <div class="photo__descr">
+              <p class="photo__author">Надежда
+                <span class="photo__time">(45 часов назад)</span>
+              </p>
+              <p class="photo__comment">Всем GM и взаимные лайки!</p>
+              <p class="photo__like">Нравится: 2560</p>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="user-photo">
         <p class="user-photo__invoke">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
