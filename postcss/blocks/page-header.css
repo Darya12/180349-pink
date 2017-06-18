@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   @mixin container;
+  @mixin inner-container;
   background-color: $menu-color;
 
   @media (min-width:$desktop-width) {
