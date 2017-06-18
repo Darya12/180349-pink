@@ -8,8 +8,15 @@
 }
 .photo__descr-look-wrapper {
   @mixin inner-container;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 130px;
+  }
 }
 .photo__descr-look {
+  display: flex;
+  flex-direction: column;
   padding: 0 26px;
   background-color: $color-smoke;
 }
@@ -19,6 +26,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+  }
 }
 .photo__item {
   width: 280px;

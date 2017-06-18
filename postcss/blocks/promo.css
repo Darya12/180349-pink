@@ -18,6 +18,11 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+  &--inner {
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+    }
+  }
 }
 .promo__hand {
   outline: 1px solid blue;
@@ -28,6 +33,17 @@
   width: 320px;
   background-color: $menu-color;
   outline: 1px solid red;
+  &--wide {
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 810px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -40,6 +56,9 @@
   padding-right: 30px;
   @mixin title;
   font-weight: 300;
+  &--inner {
+    display: block;
+  }
 
   @media (min-width:$tablet-width) {
     display: block;

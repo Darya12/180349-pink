@@ -35,7 +35,11 @@
     <main class="main-content">
       <section class="promo">
         <div class="promo__wrapper promo__wrapper--inner">
-          <h2 class="promo__title">Фотографии пользователей</h2>
+          <div class="promo__content promo__content--wide">
+            <h2 class="promo__title promo__title--inner">Фотографии пользователей</h2>
+          </div>
+        </div>
+        <div class="promo__slogan">
           <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
       </section>
@@ -118,25 +122,31 @@
       <section class="user-photo">
         <p class="user-photo__invoke">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload" action="https://echo.htmlacademy.ru/" method="post">
-          <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото">
-          <div class="upload__block">
-            <label class="upload__label" for id="size">Обрезка</label>
-            <input class="upload__input" id="size" type="radio" name="parameter" checked>
+          <div class="upload__photo">
+            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото">
           </div>
-          <div class="upload__block">
-            <label class="upload__label" for id="fill">Заливка</label>
-            <input class="upload__input" id="fill" type="radio" name="parameter">
-          </div>
-          <div class="upload__block">
-            <label class="upload__label" for id="contrast">Контраст</label>
-            <input class="upload__input" id="contrast" type="radio" name="parameter">
-          </div>
-          <div class="upload__scale">
-            <div class="upload__bar">
+          <div class="upload__parametr">
+            <div class="upload__block">
+              <label class="upload__label" for id="size">Обрезка</label>
+              <input class="upload__input" id="size" type="radio" name="parameter" checked>
+            </div>
+            <div class="upload__block">
+              <label class="upload__label" for id="fill">Заливка</label>
+              <input class="upload__input" id="fill" type="radio" name="parameter">
+            </div>
+            <div class="upload__block">
+              <label class="upload__label" for id="contrast">Контраст</label>
+              <input class="upload__input" id="contrast" type="radio" name="parameter">
+            </div>
+            <div class="upload__scale">
+              <div class="upload__bar">
+              </div>
+            </div>
+            <div class="upload__button">
+              <button class="upload__btn btn" type="submit">Запостить</button>
+              <button class="upload__btn upload__btn--invert btn" type="button">Отмена</button>
             </div>
           </div>
-          <button class="upload__btn btn" type="submit">Запостить</button>
-          <button class="upload__btn upload__btn--invert btn" type="button">Отмена</button>
         </form>
       </section>
     </main>

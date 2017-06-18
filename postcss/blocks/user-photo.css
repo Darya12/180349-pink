@@ -1,8 +1,5 @@
-.user-photo {
-  margin: 20px;
-  background-color: $color-grey;
-}
 .user-photo__invoke {
+  padding: 0;
   text-align: center;
   @mixin text;
   background-color: $bg-color;
