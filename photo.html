@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+
+    <!--Pixel Glass-->
+    <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/layout/pink-photo-mobile.jpg");
+    }
+    /* Планшет */
+      @media (min-width: 660px ) {
+        HTML {
+      /* Планшетный макет */
+        background-image: url("img/layout/pink-photo-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 960px ) {
+        HTML {
+      /* Десктопный макет */
+        background-image: url("img/layout/pink-photo-desktop.jpg");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title visually-hidden">Приложение Pink</h1>
+      <h1 class="visually-hidden">Приложение Pink</h1>
       <div class="logo">
         <a class="logo__link" href="index.html"><img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink" title="Логотип Pink"></a>
       </div>
@@ -39,10 +66,10 @@
             <h2 class="promo__title promo__title--inner">Фотографии пользователей</h2>
           </div>
         </div>
-        <div class="promo__slogan">
-          <p class="promo__text promo__text--small">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </div>
       </section>
+      <div class="promo__slogan">
+        <p class="promo__text promo__text--small">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
       <section class="photo">
         <article class="photo__look">
           <img class="photo__picture" src="img/panorama-mobile@1x.jpg"width="320" height="137" alt="Фото путешествия">

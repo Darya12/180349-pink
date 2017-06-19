@@ -1,5 +1,5 @@
 .review {
-  @mixin inner-container;
+  /*@mixin inner-container;*/
   outline: 1px solid green;
 }
 .review__person {

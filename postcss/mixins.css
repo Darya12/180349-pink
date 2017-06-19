@@ -1,24 +1,13 @@
 @define-mixin container {
-  width: 320px;
-  margin: 0 auto;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    max-width: 660px;
   }
   @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
-}
-@define-mixin inner-container {
-  width: 280px;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    width: 620px;
-  }
-  @media (min-width: $desktop-width) {
-    width: 960px;
-    padding: 0 120px;
+    max-width: 960px;
   }
 }
 @define-mixin text {

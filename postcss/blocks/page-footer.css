@@ -1,6 +1,6 @@
 .page-footer {
   @mixin container;
-  @mixin inner-container;
+  /*@mixin inner-container;*/
   display: flex;
   flex-direction: column;
   align-items: center;

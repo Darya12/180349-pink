@@ -1,5 +1,5 @@
 .contacts {
-  @mixin inner-container;
+  /*@mixin inner-container;*/
   text-align: center;
 }
 .contacts__title {

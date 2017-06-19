@@ -1,5 +1,5 @@
 .competition {
-  @mixin inner-container;
+  /*@mixin inner-container;*/
   display: flex;
   flex-direction: column;
 

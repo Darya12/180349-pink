@@ -1,17 +1,23 @@
 .promo {
+  position: relative;
+  top: -65px;
   display: flex;
   flex-direction: column;
-}
-.promo__wrapper {
-  @mixin inner-container;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #2c3c4c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $desktop-width) {
+    top: -110px;
+  }
+}
+.promo__wrapper {
+  @mixin container;
+  display: flex;
+  flex-direction: column;
+
   outline: 2px solid orange;
 
   @media (min-width: $tablet-width) {
@@ -25,6 +31,7 @@
   }
 }
 .promo__hand {
+  padding-top: 175px;
   outline: 1px solid blue;
 }
 .promo__content {
@@ -94,7 +101,7 @@
   line-height: 24px;
 }
 .promo__slogan {
-  @mixin inner-container;
+  /*@mixin inner-container;*/
 }
 .promo__text {
   @mixin text;

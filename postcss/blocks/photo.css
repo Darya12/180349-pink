@@ -7,7 +7,7 @@
   outline: 1px solid pink;
 }
 .photo__look-wrapper {
-  @mixin inner-container;
+  /*@mixin inner-container;*/
 
   @media (min-width: $desktop-width) {
     width: 940px;
@@ -21,7 +21,7 @@
   background-color: $color-smoke;
 }
 .photo__wrapper {
-  @mixin inner-container;
+  /*@mixin inner-container;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
