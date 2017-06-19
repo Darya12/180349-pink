@@ -6,7 +6,7 @@
   width: 100%;
   outline: 1px solid pink;
 }
-.photo__descr-look-wrapper {
+.photo__look-wrapper {
   @mixin inner-container;
 
   @media (min-width: $desktop-width) {
