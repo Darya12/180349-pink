@@ -1,0 +1,17 @@
+.rate {
+  display: flex;
+}
+.rate__name {
+  @mixin btn-form;
+  background-color: $menu-color;
+  text-transform: uppercase;
+}
+.rate__price {
+  @mixin title;
+  line-height: 30px;
+}
+.rate__item {
+  @mixin text;
+  line-height: 30px;
+  text-transform: uppercase;
+}
