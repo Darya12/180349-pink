@@ -1,12 +1,14 @@
 .offer {
-  /*@mixin inner-container;*/
+  @mixin container;
   display: flex;
   flex-direction: column;
+  margin-top: 86px;
   background-color: $color-smoke;
 }
 .offer__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .offer__inner {
   display: flex;
@@ -31,15 +33,14 @@
 .offer__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
+  padding-left: 19px;
+  padding-right: 19px;
   outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
     width: 300px;
     padding: 0 10px;
-    align-items: flex-start;
     text-align: left;
   }
   @media (min-width: $desktop-width) {
@@ -49,6 +50,10 @@
 }
 .offer__title {
   @mixin block-title-index;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  outline: 1px solid blue;
 
   @media (min-width: $desktop-width) {
     order: 2;
@@ -56,6 +61,10 @@
 }
 .offer__descr {
   @mixin text;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  outline: 1px solid blue;
 
   @media (min-width: $desktop-width) {
     order: 3;
