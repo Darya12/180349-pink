@@ -1,6 +1,7 @@
 .promo {
-  position: relative;
-  top: -65px;
+  /*position: relative;
+  top: -66px;*/
+  margin-top: -66px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -9,8 +10,12 @@
   background-size: cover;
   background-position: center;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -106px;
+  }
+
   @media (min-width: $desktop-width) {
-    top: -110px;
+    margin-top: -110px;
   }
 }
 .promo__wrapper {
@@ -27,56 +32,100 @@
   &--inner {
     @media (min-width: $tablet-width) {
       flex-direction: column;
+      align-items: center;
     }
   }
 }
 .promo__hand {
-  padding-top: 175px;
+  padding-top: 174px;
   outline: 1px solid blue;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 178px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 208px;
+  }
 }
 .promo__content {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $menu-color;
   outline: 1px solid red;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    background-color: transparent;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
   &--wide {
     background-color: transparent;
 
     @media (min-width: $tablet-width) {
-      width: 500px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 810px;
+      width: 550px;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
+  &--form {
+    @media (min-width: $desktop-width) {
+      width: 850px;
+    }
   }
 }
 .promo__title {
   @mixin title;
   display: none;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
   font-weight: 300;
-  &--inner {
-    display: block;
-  }
+  outline: 1px solid green;
 
   @media (min-width:$tablet-width) {
     display: block;
+    margin-top: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: $font-tablet-size;
   }
   @media (min-width:$desktop-width) {
+    margin-top: 220px;
     font-size: $font-desktop-size;
+  }
+
+  &--inner {
+    display: flex;
+    align-items: center;
+    margin-top: 97px;
+    margin-bottom: 84px;
+
+    @media (min-width: $tablet-width){
+      font-size: $font-desktop-size;
+      margin-top: 178px;
+      margin-bottom: 143px;
+    }
+    @media (min-width: $desktop-width){
+      margin-bottom: 103px;
+    }
+  }
+  &--form {
+    margin-bottom: 56px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 86px;
+    }
+    @media (min-width: $desktop-width){
+      margin-bottom: 103px;
+    }
   }
 }
 .promo__link-market {
-  margin: 0 20px;
+  margin-top: 29px;
   text-align: center;
   color: $color-white;
   background-color: $menu-color;
@@ -88,39 +137,29 @@
   &:active {
     color: color($color-pink lightness(70%));
   }
+
   @media (min-width:$tablet-width) {
-    margin: 10px;
+    margin-top: 2px;
+  }
+  @media (min-width:$desktop-width) {
+    margin-top: 16px;
   }
 }
 .promo__available {
   @mixin title;
-  margin: 20px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  margin-bottom: 30px;/*временно*/
   text-align: center;
   font-size: $font-text-size;
   line-height: 24px;
-}
-.promo__slogan {
-  /*@mixin inner-container;*/
-}
-.promo__text {
-  @mixin text;
-  text-align: center;
-  font-family: $font-light;
-  font-size: $font-title-size;
-  background-color: $color-white;
-  outline: 1px solid grey;
 
-  @media (min-width:$tablet-width) {
-    font-size: $font-tablet-size;
-    line-height: 1,2;
-  }
-  @media (min-width:$desktop-width) {
-    padding: 0 60px;
-    font-size: $font-desktop-size;
-    line-height: 1,2;
-  }
-  &--small {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 108px;/*временно*/
+    padding-top: 15px;
     font-size: $font-more-size;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 120px;/*временно*/
+    padding-top: 35px;
   }
 }
